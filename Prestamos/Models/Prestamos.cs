@@ -5,7 +5,13 @@ using System.Web;
 
 namespace Prestamos.Models
 {
-    public class Class1
+    public class Prestamos
     {
+        public int Id { get; set; }
+        public long Capital { get; set; }
+        public decimal Interes { get; set; }
+        public decimal Periodo { get; set; }
+        public int ClientesID { get; set; }
+        public virtual Clientes Clientes { get; set; }
     }
 }
